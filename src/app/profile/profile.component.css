@@ -1,0 +1,10 @@
+.profile-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: var(--azul-pastel);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--texto-primario);
+  }
+  

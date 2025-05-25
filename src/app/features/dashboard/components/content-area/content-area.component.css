@@ -1,0 +1,17 @@
+.content-area {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: var(--azul-claro); /* Usa tu variable CSS */
+    overflow-y: auto;
+    min-height: 80dvh;
+    box-sizing: border-box;
+  }
+
+
+  @media (max-width: 768px) {
+    .content-area {
+      min-height: 20dvh;
+    }
+  }
+    
+  

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="logo celeste-blanco-bg">
+    <app-logo 
+      src="assets/logo.png"
+      alt="Logo App"
+      height="50px"
+      width="150px"
+      (clicked)="handleLogoClick()"
+    ></app-logo>
+  </div>
+
+  <div class="info celeste-blanco-bg">
+    <app-header-info
+      [pageName]="currentPage"
+      [username]="currentUserName"
+      (logout)="handleLogout()"
+    ></app-header-info>
+  </div>
+
+  <div class="menu celeste-blanco-bg">
+    <app-sidebar-menu (menuItemClicked)="handleMenuItemClick($event)"></app-sidebar-menu>
+
+  </div>
+
+  <div class="contenido celeste-blanco-bg">
+    <app-content-area></app-content-area>
+  </div>
+</div>

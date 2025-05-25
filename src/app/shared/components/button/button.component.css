@@ -1,0 +1,85 @@
+:root {
+    --azul-claro: #add8e6;
+    --azul-principal: #2196f3;
+    --azul-oscuro: #1976d2;
+    --azul-profundo: #0d47a1;
+    --azul-muy-oscuro: #08285c; /* Azul más oscuro para "danger" */
+    --azul-pastel: #b3e5fc;
+    --azul-grisaceo: #607d8b;
+    --texto-primario: #333333;
+    --texto-secundario: #757575;
+    --azul-sombra: rgba(13, 71, 161, 0.3);
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px var(--azul-sombra);
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Colores */
+  .btn-primary {
+    background-color: var(--azul-oscuro);
+    color: white;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background-color: var(--azul-profundo);
+  }
+  
+  .btn-secondary {
+    background-color: var(--azul-grisaceo);
+    color: white;
+  }
+  .btn-secondary:hover:not(:disabled) {
+    background-color: var(--texto-secundario);
+  }
+  
+  .btn-danger {
+    background-color: var(--azul-muy-oscuro);
+    color: white;
+  }
+  .btn-danger:hover:not(:disabled) {
+    background-color: var(--azul-profundo);
+  }
+  
+  /* Tamaños */
+  .btn-small {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    min-width: 80px;
+  }
+  
+  .btn-medium {
+    font-size: 1rem;
+    padding: 10px 20px;
+    min-width: 100px;
+  }
+  
+  .btn-large {
+    font-size: 1.2rem;
+    padding: 14px 28px;
+    min-width: 140px;
+  }
+  
+  /* Disabled */
+  .btn:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+  }
+  
+  /* Icono */
+  .btn-icon {
+    margin-right: 8px;
+    font-size: 1.1em;
+  }
+  

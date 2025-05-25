@@ -1,0 +1,99 @@
+/* Definición del contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100dvh;          /* Alto 100% de la ventana */
+  background-color: var(--azul-pastel); /* Fondo suave con azul pastel */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Estilos para el logo */
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-container img {
+  max-width: 10dvw;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  cursor: default;
+}
+
+/* Estilos del formulario */
+.login-form {
+  max-width: 100dvw;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: white;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid var(--azul-grisaceo); /* Añadir un borde suave */
+}
+
+/* Mensajes de error */
+.error-msg {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--azul-oscuro); /* Error en color azul oscuro */
+  text-align: center;
+}
+
+.general-error {
+  background-color: var(--azul-grisaceo); /* Fondo gris para errores */
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(63, 81, 181, 0.4);
+}
+
+/* Estilos de los campos de validación */
+.validation-errors {
+  margin-bottom: 1rem;
+}
+
+.field-error {
+  color: var(--azul-oscuro); /* Mensajes de error en azul oscuro */
+  font-size: 0.85rem;
+  padding-left: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+
+/* Estilos del botón de enviar */
+button {
+  background-color: var(--azul-principal); /* Azul principal para el botón */
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+button:disabled {
+  background-color: #a0a0a0; /* Fondo gris cuando el botón está deshabilitado */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--azul-oscuro); /* Azul más oscuro en hover */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .logo-container img {
+    max-width: 40dvw;
+  }
+}

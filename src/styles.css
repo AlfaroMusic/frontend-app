@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import './styles/colors.css';
+
+/* Aquí puedes empezar a usar las variables en los demás estilos */
+html, body {
+  background-color: var(--azul-pastel);
+  color: var(--texto-primario);
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+}

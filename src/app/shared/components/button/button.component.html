@@ -1,0 +1,9 @@
+<button
+  [type]="type"
+  [disabled]="disabled"
+  [ngClass]="['btn', 'btn-' + color, 'btn-' + size, extraClasses]"
+  (click)="onClick()"
+>
+  <span *ngIf="icon" class="material-icons btn-icon">{{ icon }}</span>
+  {{ text }}
+</button>

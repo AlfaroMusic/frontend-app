@@ -1,0 +1,8 @@
+/* Estilos básicos para Home */
+h2 {
+  color: var(--azul-principal); /* Si usas variables CSS */
+}
+
+p {
+  font-size: 1.1rem;
+}

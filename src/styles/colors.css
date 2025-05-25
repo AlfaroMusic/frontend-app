@@ -1,0 +1,14 @@
+:root {
+    --azul-claro: #add8e6;
+    --azul-principal: #2196f3;
+    --azul-oscuro: #1976d2;
+    --azul-profundo: #0d47a1;
+    --azul-muy-oscuro: #08285c; /* nuevo azul más oscuro */
+    --azul-pastel: #b3e5fc;
+    --azul-grisaceo: #607d8b;
+    --texto-primario: #333333;
+    --texto-secundario: #757575;
+    --azul-sombra: rgba(13, 71, 161, 0.3);
+    --azul-blanco: #f0eef7;
+  }
+  

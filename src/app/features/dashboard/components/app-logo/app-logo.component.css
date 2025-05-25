@@ -1,0 +1,12 @@
+.logo-container {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+  }
+  
+  .logo-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  

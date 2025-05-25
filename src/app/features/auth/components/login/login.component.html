@@ -1,0 +1,48 @@
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="login-form">
+
+  <!-- Logo arriba -->
+  <div class="logo-container">
+    <img src="assets/login.jpeg" alt="Logo" />
+  </div>
+    <app-input-text
+      label="Usuario"
+      type="email"
+      placeholder="Ingresa tu email"
+      formControlName="email"
+    ></app-input-text>
+
+    <app-input-text
+      label="Password"
+      type="password"
+      placeholder="Ingresa tu contraseña"
+      formControlName="password"
+    ></app-input-text>
+
+    <div *ngIf="errorMsg" class="error-msg general-error">
+      {{ errorMsg }}
+    </div>
+
+    <div *ngIf="loginForm.invalid" class="validation-errors">
+      <div *ngIf="loginForm.get('email')?.invalid" class="field-error">
+        <div *ngIf="loginForm.get('email')?.hasError('required')">El email es requerido.</div>
+        <div *ngIf="loginForm.get('email')?.hasError('email')">El email debe ser válido.</div>
+      </div>
+      <div *ngIf="loginForm.get('password')?.invalid" class="field-error">
+        <div *ngIf="loginForm.get('password')?.hasError('required')">La contraseña es requerida.</div>
+      </div>
+    </div>
+
+    <app-button
+      type="submit"
+      [disabled]="loginForm.invalid"
+      text="Ingresar"
+      color="danger"
+      size="medium"
+      icon="login"
+      (clicked)="onSubmit()"
+    ></app-button>
+
+
+  </form>
+</div>
